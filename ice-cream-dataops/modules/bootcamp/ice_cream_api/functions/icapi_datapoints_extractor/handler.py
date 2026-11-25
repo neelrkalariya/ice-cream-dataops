@@ -115,7 +115,8 @@ def handle(client: CogniteClient = None, data=None):
     ]
 
     sites = sites or all_sites
-    backfill = backfill or True
+    if backfill is None:
+        backfill = True
     hours = hours or max_hours
 
     now = datetime.now(timezone.utc).timestamp() * 1000

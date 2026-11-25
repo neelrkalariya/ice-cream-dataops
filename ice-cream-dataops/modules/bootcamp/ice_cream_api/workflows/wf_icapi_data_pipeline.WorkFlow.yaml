@@ -1,0 +1,2 @@
+externalId: wf_icapi_data_pipeline
+description: Builds the asset and time series context, then extracts recent datapoints from the Ice Cream Factory API.
